@@ -1,2 +1,3 @@
-# Log
-Every day encounter question
+# 每日遇到的问题记录
+
+
