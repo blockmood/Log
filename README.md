@@ -1,5 +1,11 @@
 # 每日遇到的问题记录
 
+## es7 装饰器babel支持
+
+```
+@babel/plugin-proposal-decorators
+```
+
 ## React 原生滚动条事件绑定
 
 ```
