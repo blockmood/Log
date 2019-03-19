@@ -1,5 +1,8 @@
 # 每日遇到的问题记录
 
+## swiper loop:true 属性  无法复制react合成事件，导致事件失效
+解决: 第一和最后 单独绑定click
+
 ## swiper 4.0  滑动导致activeIndex 错乱问题
 原因：滑动的时候setInterval还在执行，导致activeIndex混乱，只需在事件中停止即可。
 
