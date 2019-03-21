@@ -1,6 +1,6 @@
 # 每日遇到的问题记录
 
-## webpack 通过不同的环境变量 编译不同的环境
+## webpack 通过plugins设置不同的环境变量
 ```
 new webpack.DefinePlugin({
    "process.env.REACT_ENV": JSON.stringify("h5 / app")  // 指定不同的编译环境
