@@ -1,5 +1,15 @@
 # 每日遇到的问题记录
 
+## webpack 通过不同的环境变量 编译不同的环境
+```
+new webpack.DefinePlugin({
+   "process.env.REACT_ENV": JSON.stringify("h5 / app")  // 指定不同的编译环境
+})
+
+react中通过 process.env.REACT_ENV 编译不同的环境代码
+
+```
+
 ## 正则匹配文字 数字 字母 下划线
 ```
 [\u4e00-\u9fa5_a-zA-Z0-9]  或者 .(通配匹配)
