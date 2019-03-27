@@ -1,5 +1,11 @@
 # 每日遇到的问题记录
 
+## node中 new RegExp()  反斜杠 \ 必须为 \\ 不然无法解析
+
+```
+/school/\\d+/ 
+```
+
 ## webpack 通过plugins设置不同的环境变量
 ```
 new webpack.DefinePlugin({
