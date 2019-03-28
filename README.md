@@ -1,6 +1,7 @@
 # 每日遇到的问题记录
 
-## micro task queue 队列的顺序 （后进先出）
+## micro task queue 队列的顺序 
+> 后进先出
 
 ## chrome 跨域浏览器
 ```
