@@ -1,5 +1,7 @@
 # 每日遇到的问题记录
 
+## micro task queue 队列的顺序 （后进先出）
+
 ## chrome 跨域浏览器
 ```
 --disable-web-security --user-data-dir=C:\MyChromeDevUserData  (C:\MyChromeDevUserData 你自己的目录)
