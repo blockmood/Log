@@ -1,5 +1,10 @@
 # 每日遇到的问题记录
 
+## goggle 跨域浏览器
+```
+--disable-web-security --user-data-dir=C:\MyChromeDevUserData  (C:\MyChromeDevUserData 你自己的目录)
+```
+
 ## node中 new RegExp()  反斜杠 \ 必须为 双反斜杠 不然无法解析
 
 ```
