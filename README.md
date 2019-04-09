@@ -1,5 +1,10 @@
 # 每日遇到的问题记录
 
+## react-router 不走路由渲染Html办法
+```
+render={}  否则输出字符串 "<div></div>"
+```
+
 ## micro task queue 队列的顺序 
 > 后进先出
 
