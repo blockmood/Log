@@ -1,5 +1,12 @@
 # 每日遇到的问题记录
 
+## 关于IE9 localStorage undefined 问题
+```
+const data = window.localStorage  //赋值不支持
+const data = window.localStorage.getItem('aa') //支持
+
+```
+
 ## 关于IE9传递假字符串导致数据空白问题
 ```
 解决办法 post方式 或者 假字符串转字符串
