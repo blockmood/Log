@@ -1,5 +1,11 @@
 # 每日遇到的问题记录
 
+## axios 返回res 多一个data
+
+```
+res.data.data 为值
+```
+
 ## 关于IE9 localStorage undefined 问题
 ```
 const data = window.localStorage  //赋值不支持
