@@ -1,5 +1,11 @@
 # 每日遇到的问题记录
 
+## webpack optimization.runtimeChunk
+```
+设置optimization.runtimeChunk到true或"multiple"增加了一个额外的块仅包含运行时每个入口点。
+就是会从公共代码(verdor)中单独抽出一个 runtime-hash.js  这里面包含所有分片载入的js文件
+```
+
 ## axios 返回res 多一个data
 
 ```
