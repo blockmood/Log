@@ -2,9 +2,25 @@
 
 ## axios 取消上一次请求
 ```
-cancelToken: new CancelToken(function (cancel) {
- 
+
+axios 提供CancelToken属性
+let CancelToken = axios.CancelToken  //返回一个取消请求的构造函数
+cancelToken属性： 实例化 CancelToken  传入 （c） => c  这个c就是取消的函数 
+
+
+axios({
+  url:'http://jsonplaceholder.typicode.com/comments',
+  type:'get',
+  cancelToken: new CancelToken((c)=>{
+    this.state.cancel = c
+    console.log(c)
+  })
+}).then(res => {
+  console.log(res.data)
 })
+
+//取消
+this.state.cancel()
 ```
 
 ## webpack optimization.runtimeChunk
