@@ -1,5 +1,12 @@
 # 每日遇到的问题记录
 
+## axios 取消上一次请求
+```
+cancelToken: new CancelToken(function (cancel) {
+ 
+})
+```
+
 ## webpack optimization.runtimeChunk
 ```
 设置optimization.runtimeChunk到true或"multiple"增加了一个额外的块仅包含运行时每个入口点。
