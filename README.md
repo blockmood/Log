@@ -1,5 +1,15 @@
 # 每日遇到的问题记录
 
+## node 事件报错以及调试
+
+```
+process.on('unhandledRejection', (reason, p) => {
+  console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
+  process.exit(1) //退出
+  // application specific logging, throwing an error, or other logic here
+});
+```
+
 ## axios 取消上一次请求
 ```
 
