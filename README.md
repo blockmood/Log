@@ -1,5 +1,61 @@
 # 每日遇到的问题记录
 
+## Scheme判断方式
+
+```
+const ua = (function () {
+    const regs = {
+        // 系统
+        // 'ios': /iphone|ipad|ipod/,
+        'android': /android/i,
+
+        // 机型
+        'iphone': /iphone/i,
+        'ipad': /ipad/i,
+        'ipod': /ipod/i,
+
+        // 环境
+        'weixin': /micromessenger/i,
+        'mqq': /QQ\//i,
+        'app': /inke/i,
+        'alipay': /aliapp/i,
+        'weibo': /weibo/i,
+
+        // 浏览器
+        'chrome': /chrome\//i
+    }
+
+    const ret = {}
+    Object.keys(regs).forEach((key) => {
+        var reg = regs[key]
+        ret[key] = reg.test(navigator.userAgent)
+    })
+
+    ret.ios = ret.iphone || ret.ipad || ret.ipod
+    ret.mobile = ret.ios || ret.android
+    ret.pc = !ret.mobile
+    ret.chrome = !!window.chrome
+
+    return ret
+})()
+
+const openApp = (androidScheme = 'bbmm://com.bbmm.family', iosScheme = 'babamamaGroup://') => {
+    if (ua.android) {
+        window.location.href = androidScheme
+        setTimeout(() => {
+        window.location.href = 'https://sj.qq.com/myapp/detail.htm?apkName=com.bbmm.family'
+        }, 500)
+    } else {
+        window.location.href = iosScheme
+        // setTimeout(() => {
+        //   window.location.href = ''
+        // }, 500)
+    }
+}
+
+openApp()
+```
+
 ## node 事件报错以及调试
 
 ```
