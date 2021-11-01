@@ -1,5 +1,39 @@
 # 每日遇到的问题记录
 
+## 代码格式化
+
+.prettierrc
+
+```
+{
+  "printWidth": 100, 
+    "overrides": [
+        {
+            "files": ".prettierrc",
+            "options": { "parser": "json" }
+        }
+    ],
+  "tabWidth": 2, 
+  "useTabs": false, 
+  "semi": true, 
+  "singleQuote": true, 
+  "proseWrap": "preserve", 
+  "arrowParens": "avoid", 
+  "bracketSpacing": true,
+  "disableLanguages": ["vue"], 
+  "endOfLine": "auto", 
+  "eslintIntegration": false, 
+  "htmlWhitespaceSensitivity": "ignore",
+  "ignorePath": ".prettierignore", 
+  "jsxBracketSameLine": false, 
+  "jsxSingleQuote": false, 
+  "requireConfig": false, 
+  "stylelintIntegration": false, 
+  "trailingComma": "es5",
+  "prettier.tslintIntegration": false 
+}
+```
+
 ## ios软键盘会导致h5端定位样式跟webview会冲突，导致样式错位
 
 
