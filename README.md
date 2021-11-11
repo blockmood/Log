@@ -1,5 +1,10 @@
 # 每日遇到的问题记录
 
+## 记住token
+```
+git config credential.helper store
+```
+
 ## 代码格式化
 
 .prettierrc
