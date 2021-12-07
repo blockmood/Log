@@ -1,5 +1,12 @@
 # 每日遇到的问题记录
 
+
+## vscode主题
+
+```
+Dracula Official
+```
+
 ## 记住token
 ```
 git config credential.helper store
