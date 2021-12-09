@@ -1,5 +1,11 @@
 # 每日遇到的问题记录
 
+```
+Alpha：第一个测试版本，还不稳定
+Beta：特性稳定了，但还有bug
+RC(Release Candidate)：除非有重大bug，否则这就是会成为正式版的Beta
+Release：正式发布版本
+```
 
 ## vscode主题
 
